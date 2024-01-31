@@ -1,0 +1,153 @@
+:root {
+   --cor-texto-destaque: #FFF;
+   --cor-texto-principal: #F9F9F9;
+   --cor-texto-secundaria: #C0C0C0;
+   --cor-principal: #167BF7;
+   --cor-de-fundo: #00030C;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   background-color: var(--cor-de-fundo);
+   color: var(--cor-texto-destaque);
+   font-family: 'Inter', sans-serif;
+}
+
+.principal {
+   background-image: url(./img/background.png);
+   background-repeat: no-repeat;
+   background-size: contain;
+   text-align: center;
+}
+
+.principal__box {
+   margin: 0 4em;
+}
+
+.principal__imagem {
+   margin: 1em 0 2em 0;
+}
+
+.container {
+   height: 100vh;
+   display: grid;
+   grid-template-columns: 50% 50%;
+   align-items: center;
+}
+
+.container__titulo {
+   font-size: 28px;
+   font-weight: 700;
+}
+
+.container__botao {
+   background-color: var(--cor-principal);
+   border-radius: 5px;
+   padding: 1em;
+   display: block;
+   color: var(--cor-texto-destaque);
+   text-decoration: none;
+   margin-bottom: 1em;
+}
+.botao-secundario {
+   background: none;
+   border: 2px solid var(--cor-texto-principal);
+}
+.botao-principal:hover {
+   box-shadow: 0 0 20px var(--cor-principal);
+   text-shadow: 0 0 5px var(--cor-texto-secundaria);
+}
+.botao-secundario:hover {
+   background: #167bf725;
+   text-shadow: 0 0 5px var(--cor-texto-secundaria);
+}
+
+.container__aviso {
+   font-size: 12px;
+   color: var(--cor-texto-secundaria);
+}
+.container__imagem {
+   width: 80%;
+   text-align: center;
+}
+
+.secundario {
+   margin: 0 6em;
+}
+
+.container__descricao {
+   padding: 0 2em;
+}
+
+.descricao__titulo {
+   color: var(--cor-texto-destaque);
+   font-size: 48px;
+   margin-bottom: 8px;
+}
+.descricao__texto {
+   color: var(--cor-texto-principal);
+   font-size: 16px;
+   line-height: 150%;
+}
+
+.secundario__botao {
+   display: inline-block;
+   margin-top: 1em;
+}
+
+.dispositivos {
+   text-align: center;
+}
+
+.dispositivos__titulo {
+   font-size: 46px;
+   color: var(--cor-texto-destaque);
+}
+
+.dispositivos__lista {
+   display: flex;
+   justify-content: center;
+   list-style: none;
+   margin: 5em 0;
+}
+
+.lista__item {
+   font-size: 32px;
+   color: var(--cor-texto-destaque);
+}
+
+.rodape {
+   text-align: center;
+   margin: 4em 0;
+   padding: 0 5em;
+}
+
+.rodape__logo {
+   margin: 2em 0;
+}
+
+.rodape__lista {
+   display: flex;
+   justify-content: center;
+   gap: 16px;
+   list-style: none;
+}
+
+.lista__link {
+   font-size: 16px;
+   text-decoration: none;
+   color: var(--cor-texto-destaque);
+}
+.lista__link:hover {
+   text-shadow: 0 0 2px var(--cor-texto-principal);
+}
+
+.rodape__texto {
+   color: var(--cor-texto-secundaria);
+   font-size: 14px;
+   margin: 1.5em 0;
+}
