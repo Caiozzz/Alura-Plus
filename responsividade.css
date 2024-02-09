@@ -1,0 +1,55 @@
+@media (max-width: 780px) {
+   .principal {
+      background-image: none;
+   }
+
+   .secundario {
+      margin: 0 2em;
+      display: flex;
+      gap: 20px;
+   }
+
+   .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+   }
+
+   .container__imagem {
+      width: 60%;
+   }
+   .container__descricao {
+      text-align: center;
+   }
+   .descricao__titulo {
+      font-size: 28px;
+   }
+
+   .dispositivos__titulo {
+      font-size: 32px;
+   }
+   .dispositivos__lista {
+      flex-direction: column;
+   }
+   .lista__item {
+      font-size: 28px;
+   }
+
+   .rodape {
+      padding: 0 2em;
+   }
+
+   .rodape__lista {
+      flex-wrap: wrap;
+      margin-bottom: 2.5em;
+   }
+   .lista__link{
+      font-size: 14px;
+   }
+
+   .rodape__texto {
+      font-size: 12px;
+   }
+
+}
